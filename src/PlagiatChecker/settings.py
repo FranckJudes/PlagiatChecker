@@ -126,3 +126,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "PlagiatChecker/static")
 ]
+AUTH_USER_MODEL = "accounts.Users"
