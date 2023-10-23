@@ -1,4 +1,4 @@
-# PlagiatChecker on  Django(Python) 
+# PlagiatChecker with  Django(Python) 
 
 
 #### HOW TO RUN THE App
