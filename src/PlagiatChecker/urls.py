@@ -19,7 +19,6 @@ urlpatterns = [
     # Ekobo et Ferdinand
     path("plagiatDocument/", plagiatDocument, name="plagiatDocument"),
     
-    
     # Dimitri et 45 
     path("plagiatLocal/", plagiatLocal ,name="plagiatLocal"),
     
