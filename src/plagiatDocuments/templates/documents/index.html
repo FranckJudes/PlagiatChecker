@@ -26,37 +26,7 @@
                     Ici vous allez comparer 02 document  et retouner un rapport en PDF et un pourcentage de similitude
                 </p>
             </div>
-
           </div>
-
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            <h1>Choose two files to compare or enter contents to compare!</h1>
-            <div class="card">
-                <div class="card-header">
-                    <h5>Charger les fichiers</h5>
-                </div>
-                    
-                <div class="card-body" >
-                    <div class="tab-pane fade show active" id="file-input-dc-2" role="tabpanel" aria-labelledby="file-tab-3">
-                        <form id="form2-ws" action="/twofilecompare1/" enctype="multipart/form-data" method="POST">
-                            {% csrf_token %}
-                            <input type="file" class="fileupload" id="fileupload" name="docfile1" required="True">
-                            <input type="file" class="fileupload" id="fileupload" name="docfile2" required="True">
-                        </form>
-                    </div>
-                </div>
-                <div class="p-15 border-bottom">
-                    <button type="submit" form="form2-ws" id="submit-button-2" class="btn submit-button-2"><h4>Compare The Files</h4></button>
-                </div>
-            </div>
-            
-            
-            <ul style="text-align: center;margin-left: 450px;">
-                <li class="output-per" style="list-style:none">{{ result }}%</li>
-            </ul>
-
-        </div>
         </div>
       </div>
 {% endblock %}
