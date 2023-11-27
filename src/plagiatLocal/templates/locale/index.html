@@ -47,12 +47,18 @@
                         </form>
                     
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" >
                                          
-                        <form method = "POST" class="post-form" action = "{% url 'envoifichier' %}">
+                        <form method = "POST" class="post-form" action = "{% url 'envoifichier2' %}" enctype="multipart/form-data">
                             {% csrf_token %}
                             <label class="form-label" for="customFile"> Upload (.txt,.py,...)</label>
                             <input type="file" class="form-control" id="fichier" name="fichier"/>
+
+                            <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                               
+                                <button type="submit" class="btn btn-primary"> 
+                                     Envoyer</button>
+                            </div>
                         </form>
                     
                     </div>

@@ -1,5 +1,6 @@
+
 def Typefile(f):
-    ref_file=data
+    ref_file=f
     extension=ref_file.split('.')[-1]
     return extension
 
@@ -12,5 +13,5 @@ def EnregistrerPDF(f):
 
 def Enregistrerautre(f):
     with open('./media/autre/'+f.name, 'wb+') as file:
-        for chunk in f.chunk():
+        for chunk in f.chunks():
             file.write(chunk)
