@@ -6,7 +6,7 @@ from django.urls import path
 from .views import index
 from accounts.views import login_user,register_user,logout_user
 from plagiatDocuments.views import plagiatDocument
-from plagiatLocal.views import plagiatLocal
+from plagiatLocal.views import plagiatLocal, send_fichier
 from plagiatOnline.views import plagiatOnline
 
 urlpatterns = [
@@ -22,6 +22,7 @@ urlpatterns = [
     
     # Dimitri et 45 
     path("plagiatLocal/", plagiatLocal ,name="plagiatLocal"),
+    path("send/", send_fichier ,name="envoifichier"),
     
     
     # Gallagher
