@@ -26,19 +26,25 @@
 
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Upload(.pdf)</button>
-                      <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Upload(.txt,.py,...)</button>
+                      <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Upload (.pdf)</button>
+                      <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Upload (.txt,.py,...)</button>
                     </div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         
-                        Upload(.pdf)
+                        <form method = "POST" action = "">
+                            <label class="form-label" for="customFile"> Upload (.pdf)</label>
+                            <input type="file" class="form-control" id="fichier" name="fichier"/>
+                        </form>
                     
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        
-                        pload(.txt,.py,...)
+                                         
+                        <form method = "POST" action = "">
+                            <label class="form-label" for="customFile"> Upload (.txt,.py,...)</label>
+                            <input type="file" class="form-control" id="fichier" name="fichier"/>
+                        </form>
                     
                     </div>
                   </div>
