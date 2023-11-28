@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+class DocumentForm(models.Model):
+    nomdoc = models.FileField(upload_to='public',null=True)
+   
+    class Meta:
+        db_table = "document"      
+    
+
+
+    

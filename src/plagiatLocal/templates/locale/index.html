@@ -36,7 +36,7 @@
                         <form method = "POST" class="post-form" action = "{% url 'envoifichier' %}" enctype="multipart/form-data">
                             {% csrf_token %}
                             <label class="form-label" for="customFile"> Upload (.pdf)</label>
-                            <input type="file" class="form-control" id="fichier" name="fichier"/>
+                            <input type="file" class="form-control" id="nomdoc" name="nomdoc"/>
                            
 
                             <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
@@ -52,7 +52,7 @@
                         <form method = "POST" class="post-form" action = "{% url 'envoifichier2' %}" enctype="multipart/form-data">
                             {% csrf_token %}
                             <label class="form-label" for="customFile"> Upload (.txt,.py,...)</label>
-                            <input type="file" class="form-control" id="fichier" name="fichier"/>
+                            <input type="file" class="form-control" id="nomdoc" name="nomdoc"/>
 
                             <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
                                

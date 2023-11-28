@@ -127,3 +127,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "PlagiatChecker/static")
 ]
 AUTH_USER_MODEL = "accounts.Users"
+
+MEDIA_ROOT = './media/'
+MEDIA_URL = '/media/'
