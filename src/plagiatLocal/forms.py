@@ -1,9 +1,9 @@
 from django import forms
-from plagiatLocal.models import DocumentForm
+from plagiatLocal.models import Document
 
 class DocumentForm(forms.ModelForm): 
     class Meta:
-        model = DocumentForm
+        model = Document
         fields = "__all__"
         
 

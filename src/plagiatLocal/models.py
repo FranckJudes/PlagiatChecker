@@ -1,6 +1,6 @@
 from django.db import models
 
-class DocumentForm(models.Model):
+class Document(models.Model):
     nomdoc = models.FileField(upload_to='public',null=True)
    
     class Meta:

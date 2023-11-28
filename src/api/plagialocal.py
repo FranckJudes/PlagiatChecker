@@ -35,7 +35,17 @@ class Plagialocal:
         result = match.ratio() * 100
         pourcentage = int(result)
         # Display the final result
-        return pourcentage 
+        
+        if pourcentage >= 0 and pourcentage <=25:
+            couleur = "yellow"
+        elif pourcentage >= 26 and pourcentage <= 50:
+            couleur = "green"
+        elif pourcentage >= 51 and pourcentage <= 75:
+            couleur = "orange"
+        elif pourcentage >= 76 and pourcentage <= 100:
+            couleur = "red"
+            
+        return [pourcentage,couleur]
        
         
         
